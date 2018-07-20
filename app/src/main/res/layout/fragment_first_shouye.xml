@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context=".fragment.First_shouyeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/bjing_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="北京市"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/mimg_down"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/bjing_tv"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="102dp"
+            android:src="@drawable/action_down"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="102dp" />
+
+        <TextView
+            android:id="@+id/tv_mcar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="九悦学车"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/mimg_home"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/mimg_down"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/home_message_new" />
+
+        <com.youth.banner.Banner xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/mimg_home"
+            android:layout_marginTop="20dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mRecycl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/banner"
+            android:background="@drawable/b1">
+
+        </android.support.v7.widget.RecyclerView>
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mRecycl"
+            android:background="@drawable/b2" />
+
+        <RelativeLayout
+            android:id="@+id/mll_recycl"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/mRecycl"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/yuanjiao"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/mimg_recycl"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="20dp"
+                android:src="@drawable/jiuyuetoutiao_img" />
+
+            <TextView
+                android:id="@+id/mtv_gengduo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="更多"
+                android:paddingRight="20dp"
+                android:layout_alignParentRight="true"
+                android:textColor="#ffa45f"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                />
+            <ViewFlipper
+                android:id="@+id/filpper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="4"
+                android:autoStart="true"
+                android:flipInterval="2000"
+                android:layout_toRightOf="@id/mimg_recycl"
+                android:layout_toLeftOf="@id/mtv_gengduo"
+                android:inAnimation="@anim/anim_come_in"
+                android:outAnimation="@anim/anim_come_out">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="驾考你真的会打方向盘吗？"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="傻傻分不清？赶紧来认清楚，省得被扣分罚款？"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="史上最严驾考新规7月1日就要发布了？原来这全都是骗人的！"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="夏季阳光强烈，开车如何才能不\u201C晃眼\u201D"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="不违法！这6种情况允许开车调头 可是很多人还不知道！"
+                    android:textSize="15sp" />
+            </ViewFlipper>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/mimg_supper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mll_recycl"
+            android:background="@drawable/b2" />
+
+        <ImageView
+            android:id="@+id/img_jyue"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@id/mimg_supper"
+            android:scaleType="fitXY"
+            android:src="@drawable/b3" />
+
+        <ImageView
+            android:id="@+id/mimg_haipi"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/img_jyue"
+            android:background="@drawable/jyue"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:id="@+id/ll_jiaxiao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mimg_haipi"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_jiaxiao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/b4" />
+
+            <ImageView
+                android:id="@+id/mimg_dinwei"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/map_change_img" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mRecycl_bejingCar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_jiaxiao">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <ImageView
+            android:id="@+id/mimg_pingtai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/b5"
+            android:layout_below="@id/mRecycl_bejingCar"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mRecycl_Pingtaiyou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mimg_pingtai">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+</ScrollView>

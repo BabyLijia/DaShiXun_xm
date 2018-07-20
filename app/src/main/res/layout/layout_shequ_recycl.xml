@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rt_shequ1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:id="@+id/img_wenwen"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/wenwen" />
+
+        <TextView
+            android:id="@+id/yangjing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="7"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/yangjing"
+            android:src="@drawable/find_scanned" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="雯雯"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/yangjing"
+            android:layout_toRightOf="@id/img_wenwen"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5小时前"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="被赏0悦豆"
+            android:textColor="@color/color3"
+            android:layout_marginLeft="10dp"
+           android:layout_below="@id/name"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/img_wenwen"
+            android:textSize="20sp" />
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_gushi"
+        android:layout_below="@id/rt_shequ1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:id="@+id/xueche"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/color2"
+            android:layout_height="wrap_content"
+            android:text="#灌水区#"/>
+
+        <TextView
+            android:id="@+id/xueche2"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=",明天考试"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_xinxi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:layout_below="@id/ll_gushi">
+
+
+        <TextView
+            android:id="@+id/xinxicontent"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/find_message_img"
+            android:gravity="center"
+            android:text="2"/>
+
+        <TextView
+            android:id="@+id/dianzan"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/xinxicontent"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/find_thumbs_up"
+            android:gravity="center"
+            android:text="4"/>
+
+        <TextView
+            android:id="@+id/mtv_xinxin"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/find_like_img_no"
+            android:gravity="center"
+            android:layout_toRightOf="@id/dianzan"
+            android:text="0"/>
+
+
+        <ImageView
+            android:id="@+id/mimg_dashang"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/image_exceptional" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.fragment_jiakao.OneFragment">
+
+    <RelativeLayout
+        android:id="@+id/mimg1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/subject14_download_title"
+        android:gravity="right">
+
+
+        <TextView
+            android:id="@+id/tv_lijixz"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="22dp"
+            android:background="#fff"
+            android:gravity="center"
+            android:text="立即下载"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_shaohouxz"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_lijixz"
+            android:layout_marginEnd="108dp"
+            android:layout_marginRight="108dp"
+            android:background="#fff"
+            android:gravity="center"
+            android:text="稍后下载"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tiku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mimg1"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:background="#eeeee0"
+        android:layout_marginBottom="5dp"
+        android:text="三月份题库已更新" />
+
+    <LinearLayout
+        android:id="@+id/mll_jiakao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tiku"
+        android:layout_marginLeft="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/keyi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="科一考规"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/jiaot"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="交通标志"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dati"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="答题技巧"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/mimg2"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_below="@id/mll_jiakao"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/practice_order_img_new" />
+
+    <LinearLayout
+        android:id="@+id/mll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mimg2"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/mimg_dianji1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/a" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="随机练习"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/mimg_dianji2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/b" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="随机练习"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/mimg_dianji3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/c" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="随机练习"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/mimg_dianji4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/d" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="随机练习"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/mimg3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/mll2"
+        android:layout_marginLeft="88dp"
+        android:layout_marginRight="88dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/practice_simulate_img_new" />
+
+    <LinearLayout
+        android:id="@+id/mll3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mimg3"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/mimg_dianji01"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/e" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="VIP保过卡"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/mimg_dianji02"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/f" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="考试记录"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/mimg_dianji03"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/g" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="成绩排行"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/mimg_dianji04"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/h" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="自主约考"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

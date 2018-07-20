@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.CommunityFragment">
+
+    <RelativeLayout
+        android:id="@+id/ll_shequ1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eee"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/mimg_geren"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/find_user" />
+
+        <TextView
+            android:id="@+id/shequ"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="社区"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/mimg_xinxi"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/discovery_message_img" />
+
+        <ImageView
+            android:id="@+id/mimg_gerenjia"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="70dp"
+            android:layout_toLeftOf="@id/mimg_xinxi"
+            android:src="@drawable/find_addfriend" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_shequ2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_shequ1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="我的圈子"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/mimg_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_you" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_shequ3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="118dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/mimg_juanzi1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/xuyuan1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="5dp"
+            android:text="我的圈子"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/ll_shequ4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/ll_shequ3"
+        android:layout_marginLeft="80dp"
+        android:layout_marginStart="80dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/mimg_juanzi2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/xuyuan2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="5dp"
+            android:text=" 许愿墙"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/ll_shequ5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ll_shequ3"
+        android:layout_toEndOf="@+id/ll_shequ4"
+        android:layout_toRightOf="@+id/ll_shequ4"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/mimg_juanzi3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/xuyuan3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="5dp"
+            android:text=" 晒驾照"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/ll_shequ6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ll_shequ3"
+        android:layout_toEndOf="@+id/ll_shequ5"
+        android:layout_toRightOf="@+id/ll_shequ5"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/mimg_juanzi4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/xuyuan4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="学车故事"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/mTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_shequ6"
+        android:layout_marginTop="10dp"
+        android:background="#eee"
+        app:tabIndicatorColor="@color/color2"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/color2"
+        app:tabTextColor="@color/color_plea">
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mTabLayout"></android.support.v4.view.ViewPager>
+
+</RelativeLayout>

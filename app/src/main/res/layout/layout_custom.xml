@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/mll_recycl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:id="@+id/mimg_recycl"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:src="@drawable/jiuyuetoutiao_img"/>
+
+        <ViewFlipper
+            android:id="@+id/filpper"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:autoStart="true"
+            android:layout_gravity="center_vertical"
+            android:flipInterval="2000"
+            android:inAnimation="@anim/anim_come_in"
+            android:outAnimation="@anim/anim_come_out">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="驾考你真的会打方向盘吗？"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="傻傻分不清？赶紧来认清楚，省得被扣分罚款？"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="史上最严驾考新规7月1日就要发布了？原来这全都是骗人的！"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_height="match_parent" />
+        </ViewFlipper>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="更多"
+            android:textColor="#ffa45f"
+            android:textSize="20sp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

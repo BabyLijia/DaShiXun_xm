@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.expert2_jiakaozj.ke_er.KeEr_YuYinActivity">
+
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="科二语音播报"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll"
+        android:background="#FFF"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_daoche"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="倒车入库"
+            android:gravity="center"
+            android:drawableTop="@drawable/test_course2_voice1"
+            android:drawablePadding="10dp"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_qibu"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="上坡起步"
+            android:gravity="center"
+            android:drawableTop="@drawable/test_course2_voice2"
+            android:drawablePadding="10dp"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_stopcar"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:text="侧方停车"
+            android:gravity="center"
+            android:drawableTop="@drawable/test_course2_voice3"
+            android:drawablePadding="10dp"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_zhanwan"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="直角转弯"
+            android:gravity="center"
+            android:drawableTop="@drawable/test_course2_voice4"
+            android:drawablePadding="10dp"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll2"
+        android:background="#FFF"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_quxian"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="曲线行驶"
+            android:gravity="center"
+            android:drawableTop="@drawable/test_course2_voice5"
+            android:drawablePadding="10dp"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_danbian"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="单边板"
+            android:gravity="center"
+            android:drawableTop="@drawable/test_course2_voice6"
+            android:drawablePadding="10dp"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

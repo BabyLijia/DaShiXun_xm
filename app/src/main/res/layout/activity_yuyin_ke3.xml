@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/mFanHui_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="18dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="科三语音播报"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <RadioButton
+            android:id="@+id/mBUT_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/test_sub3_voice0"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="考试准备" />
+
+        <RadioButton
+            android:id="@+id/mBUT_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/test_sub3_voice1"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="起步" />
+
+
+        <RadioButton
+            android:id="@+id/mBUT_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/test_sub3_voice2"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="路口直行" />
+
+        <RadioButton
+            android:id="@+id/mBUT_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/test_sub3_voice3"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="变更车道" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <RadioButton
+            android:id="@+id/mBUT_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/test_sub3_voice4"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="公共汽车站" />
+
+        <RadioButton
+            android:id="@+id/mBUT_6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/test_sub3_voice5"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="学校" />
+
+
+        <RadioButton
+            android:id="@+id/mBUT_7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/test_sub3_voice6"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="直线行驶" />
+
+        <RadioButton
+            android:id="@+id/mBUT_8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/test_sub3_voice7"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="左转" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <RadioButton
+            android:id="@+id/mBUT_9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/test_sub3_voice8"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="右转" />
+
+        <RadioButton
+            android:id="@+id/mBUT_10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/test_sub3_voice9"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="加减挡" />
+
+
+        <RadioButton
+            android:id="@+id/mBUT_11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/test_sub3_voice10"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="会车" />
+
+        <RadioButton
+            android:id="@+id/mBUT_12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/test_sub3_voice11"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="超车" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <RadioButton
+            android:id="@+id/mBUT_13"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/test_sub3_voice12"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="减速" />
+
+        <RadioButton
+            android:id="@+id/mBUT_14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/test_sub3_voice13"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="限速" />
+
+
+        <RadioButton
+            android:id="@+id/mBUT_15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/test_sub3_voice14"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="人行横道" />
+
+        <RadioButton
+            android:id="@+id/mBUT_16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/test_sub3_voice15"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="人行横道有人" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <RadioButton
+            android:id="@+id/mBUT_17"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/test_sub3_voice16"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="隧道" />
+
+        <RadioButton
+            android:id="@+id/mBUT_18"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/test_sub3_voice17"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="掉头" />
+
+
+        <RadioButton
+            android:id="@+id/mBUT_19"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/test_sub3_voice18"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="靠边停车" />
+    </LinearLayout>
+</LinearLayout>

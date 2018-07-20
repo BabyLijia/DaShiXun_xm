@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    tools:context=".activity.Jyue_pingtuanActivity">
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="拼团学车"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/mimg_haipi"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/jyue"
+            android:scaleType="fitXY"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/bangzhu"
+            android:layout_width="181dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@id/mimg_haipi"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="#DDFD7A07"
+            android:gravity="center"
+            android:text="已帮助551人成功参团,节省68470元"
+            android:textColor="#fff"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_2"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mtv_gduo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:padding="10dp"
+            android:text="极品成团"
+            android:textColor="#FF6CC273"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ctuan"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:gravity="right"
+            android:padding="10dp"
+            android:text="更多"
+            android:textColor="#000"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/youshi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_below="@id/ll_3"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:text="平台优势"
+        android:textStyle="bold"
+        android:textColor="#FFC916FF"
+        android:textSize="20sp"/>
+
+
+    <ImageView
+        android:id="@+id/mimg_pingtai"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@id/youshi"
+        android:background="#fff"
+        android:src="@drawable/group_advance_img"
+        android:scaleType="fitXY"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/guizhe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_below="@id/mimg_pingtai"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:text="拼团规则"
+        android:textStyle="bold"
+        android:textColor="#FF4896F5"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:id="@+id/guizhe2"
+        android:layout_below="@id/guizhe"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/guizhe4"/>
+
+</RelativeLayout>

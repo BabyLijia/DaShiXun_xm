@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+        >
+        <Button
+            android:id="@+id/xuanzedizhi"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="北京市"
+            android:background="#fff"
+            android:drawableRight="@drawable/action_down"
+
+            />
+        <ImageView
+            android:id="@+id/lingdang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="17dp"
+            android:src="@drawable/home_message_new" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/img_title_new"
+
+            />
+        <!--android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@id/xuanzedizhi"
+                    android:layout_toLeftOf="@id/lingdang"-->
+    </RelativeLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="正在加载数据"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            />
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            srlClassicsSpinnerStyle="FixedBehind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView
+    android:id="@+id/rlv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

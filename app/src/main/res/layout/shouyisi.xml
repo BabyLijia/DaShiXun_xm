@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/si_img"
+        android:layout_alignParentLeft="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        />
+    <LinearLayout
+        android:layout_toRightOf="@id/si_img"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/jiaoxiaoName"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#000"
+                />
+            <TextView
+                android:id="@+id/diqv"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="#898383"
+                android:layout_marginLeft="8dp"
+                />
+
+            <TextView
+                android:id="@+id/jiage"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:textColor="#86f5e3"
+                android:textSize="10sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/baoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#898383"
+                android:textSize="15sp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ratingbar_big_selected"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ratingbar_big_selected"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ratingbar_big_selected"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ratingbar_big_selected"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ratingbar_big_selected"
+                />
+            
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/jvli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#898383"
+            android:textSize="15sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/biaoqian1"
+                android:background="@drawable/siyuanjiao"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:text="免费班车"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/biaoqian2"
+                android:background="@drawable/image_my_new_top"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/biaoqian3"
+                android:background="@drawable/image_my_new_top"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

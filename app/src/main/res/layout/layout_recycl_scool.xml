@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/mimg_beifangScool"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_launcher_background"/>
+
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/mimg_beifangScool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/mtv_name1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="2"
+                android:text="北方驾校"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mtv_name2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="昌平区" />
+
+            <TextView
+                android:id="@+id/mtv_name3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="right"
+                android:text="￥3600.0"
+                android:textColor="@color/colorPrimaryDark" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mtv_registered1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="945人已报名"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+         <ImageView
+             android:layout_marginLeft="15dp"
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:src="@drawable/thaw_short_x"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/thaw_short_x"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/thaw_short_x"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/thaw_short_x"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/thaw_short_x"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mtv_ground1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="2"
+                android:text="最近训练场  5.55公里"
+                android:textSize="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+           <TextView
+               android:background="@drawable/image_my_new_top"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="30dp"
+               android:layout_marginLeft="10dp"
+               android:text="免费班车"
+               android:textSize="14sp"
+               android:textStyle="bold"
+               android:textColor="#fff"
+               android:gravity="center"/>
+
+            <TextView
+                android:background="@drawable/image_my_new_top"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:text="明星驾校"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:gravity="center"/>
+
+            <TextView
+                android:background="@drawable/image_my_new_top"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:text="十佳驾校"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+</RelativeLayout>

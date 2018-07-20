@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    tools:context=".fragment.shouye_log_fragment.Jouyue_logFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_log1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/icon_account" />
+
+        <EditText
+            android:id="@+id/med_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/tv_name"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:hint="输入手机号"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_log2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/ll_log1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/tv_name"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/password_img" />
+
+        <EditText
+            android:id="@+id/med_psw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/tv_name"
+            android:drawableRight="@drawable/image_in_dynamic_boom2"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:hint="输入密码"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/mPassWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="忘记密码?"
+        android:layout_below="@id/ll_log2"
+        android:gravity="right"
+        android:layout_margin="20dp"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/mlog_jouyue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:layout_below="@id/mPassWord"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:background="#FFB6B1B1"/>
+
+
+    <RelativeLayout
+        android:id="@+id/ll_log3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mlog_jouyue"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/mimg_qq"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/mimg_weixin"
+            android:layout_marginStart="54dp"
+            android:src="@drawable/umeng_socialize_qq"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="54dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="78dp"
+            android:layout_marginTop="113dp"
+            android:text="QQ"
+            android:textSize="20sp"
+            android:layout_marginLeft="78dp"
+            android:layout_alignParentLeft="true" />
+
+        <ImageView
+            android:id="@+id/mimg_weixin"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="78dp"
+            android:layout_marginTop="26dp"
+            android:src="@drawable/umeng_socialize_wechat"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="78dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/mimg_qq"
+            android:layout_marginEnd="92dp"
+            android:text="微信"
+            android:layout_marginTop="17dp"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="92dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

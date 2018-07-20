@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ExpertFragment">
+
+    <TextView
+        android:id="@+id/bjing_tvjiakao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="驾考专家"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bjing_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:text="北京市"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/mimg_down"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/bjing_tv"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="90dp"
+        android:src="@drawable/action_down" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/mTablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mimg_down">
+
+    </android.support.design.widget.TabLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mviewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mTablayout">
+
+    </android.support.v4.view.ViewPager>
+
+    <ImageView
+        android:id="@+id/mimg_Ex"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="#EEBFBBBB"
+        android:paddingBottom="100dp"
+        android:src="@drawable/guide_image" />
+</RelativeLayout>
